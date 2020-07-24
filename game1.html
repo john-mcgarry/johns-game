@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>John's Game Website</title>
+    <link rel="stylesheet" type="text/css" href="format2.css">
+</head>
+
+<body>
+    <div class="text" id= "guess"></div>
+    <Script>
+        let answer = Math.floor((Math.random() * 10) + 1)
+        let guess = prompt("what is your guess?")
+        document.getElementById("guess").innerText = "Your guess was: " + guess
+        if (guess == answer){
+            alert("you were correct")
+        } else{
+            alert("you were incorrect")
+        }
+
+    </Script>
+</body>
+
+</html>   
